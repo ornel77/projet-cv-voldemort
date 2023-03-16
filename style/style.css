@@ -2,17 +2,37 @@
 @font-face {
     font-family: "HARRYP__";
     src: local("HARRYP__"), local("HARRYP__"),
-    url("HARRYP__.ttf");
-}
+      url("HARRYP__.ttf");
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --background-color: rgba(26, 71, 42, .8);
+    --text-color: #cecbcb;
+}
 
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
 }
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
