@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css" media ="screen and (max-width:375px)">
+    <link rel="stylesheet" href="./style/style.css" media ="screen and (min-width:375px)">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -94,9 +94,29 @@
 
     <!-- ******************************** -->
     <section id="education">
-        <h3>Education</h3>
-        <img src="" alt="owl">      <!-- MANQUE PHOTO-->
-        <img src="" alt="newt">      <!-- MANQUE PHOTO-->
+        <div class="container">
+            <h3>Education</h3>
+            <img src="./pictures/poudlard_blackwhite.jpg" alt="poudlard" class="poudlard">
+            <div class="diplomas">
+                <div class="newts">
+                    <h4 class="diploma">NEWT's</h4>
+                    <ul class="grade">
+                        <li>Potion : Outsanding</li>
+                        <li>Divination : Acceptable</li>
+                        <li>Defence Against the Dark : Outsanding</li>
+                    </ul>
+                </div>
+                <div class="owls">
+                    <h4 class="diploma">OWL's</h4>
+                    <ul class="grade">
+                        <li>Potion : Exceeds Expectations</li>
+                        <li>Divination : Acceptable</li>
+                        <li>Defence Against the Dark : Outsanding</li>
+                        <li>Muggle Studies : Troll</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -118,17 +138,37 @@
 
 
     <section id="hobbies">
+        <div class="container">
+            <div class="hobbies_list">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
 
     </section>
 
     <section id="contact">
-
+        <div class="container">
+            <h3>Contact Me</h3>
+            <form action="">
+                <div class="name_info">
+                    <input type="text" id="first_name" placeholder="Enter your firstname">
+                    <input type="text" id="last_name" placeholder="Enter your lastname">
+                </div>
+                <input type="mail" placeholder="Enter your mail">
+                <textarea placeholder="Comment here"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 
 
 
     <footer id="footer">
-        <p>&copy; copyright </p>
+        <p>&copy; copyright</p>
     </footer>
   
 </body>
