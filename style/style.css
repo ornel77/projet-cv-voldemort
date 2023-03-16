@@ -1,0 +1,18 @@
+/* import de la font Harry Potter */
+@font-face {
+    font-family: "HARRYP__";
+    src: local("HARRYP__"), local("HARRYP__"),
+    url("HARRYP__.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
