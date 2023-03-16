@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*********************   HEADER    **************************/
+header{
+    /* background-color: pink; */
+    background-image: url('../pictures/background_mobile.jpg');
+    /* background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Lordvoldemort.jpg/330px-Lordvoldemort.jpg'); */
+
+}
+
+h1{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+
+
+/************************ SECTION ABOUT ME ********************/
+
+
+/**************************/
+section .personalInfo{
+    background-color: blue;
+    font-size: 0.8em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.personalInfo img{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: auto;
+    border-radius: 50%;
+    width: 50%;
+}
+
+
+.personalInfo h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+    text-align: center;
+    padding: 0.5em;
+    
+}
+
+.phone section{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+/* .age section{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.mail section{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} 
+
+.adresse section{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}  */
+
+
+
+
