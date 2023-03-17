@@ -2,13 +2,14 @@
 @font-face {
     font-family: "HARRYP__";
     src: local("HARRYP__"), local("HARRYP__"),
-      url("HARRYP__.ttf");
+      url("../HARRYP__.ttf");
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 :root {
-    --background-color: rgba(26, 71, 42, .8);
+    --background-color: rgba(26, 71, 42, .9);
+    --background-color2: #001242;
     --text-color: #cecbcb;
 }
 
@@ -22,6 +23,7 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 img {
@@ -30,9 +32,135 @@ img {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 ul {
     list-style: none;
+}
+
+h1 {
+    font-family: "HARRYP__",Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 58px;  
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    /* color: rgb(9, 0, 23); */
+    color: #000022;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 UTILTY CLASSES                             */
+/* -------------------------------------------------------------------------- */
+.container {
+    max-width: 315px;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  EDUCATION                                 */
+/* -------------------------------------------------------------------------- */
+#education {
+    background-color: rgb(244, 242, 242);
+    /* background-color: #EBDDC6; */
+    /* background: url("../pictures/bg-parchemin.jpeg") no-repeat center/cover; */
+    color: #151414;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#education h4.diploma_title {
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #001242;
+
+}
+
+#education .exam {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#education .grade li {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+#education .grade li:first-child {
+    border-top: 1px solid var(--text-color);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+#contact {
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--background-color2);
+    background: url("../pictures/nagini.jpeg") no-repeat center/cover;
+}
+
+#contact h3 {
+    color: var(--text-color);
+}
+
+
+
+#contact form input, 
+#contact form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+#contact form textarea {
+    height: 100px;
+}
+
+#contact form button {
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 300ms ease-in;
+}
+
+#contact form button:hover {
+    background-color: var(--background-color2);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    padding: 30px 0;
+    background-color: var(--background-color2);
+    border-top: 1px solid var(--text-color);
+    text-align: center;
 }
 
