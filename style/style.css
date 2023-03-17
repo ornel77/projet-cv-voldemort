@@ -2,8 +2,8 @@
 @font-face {
     font-family: "HARRYP__";
     src: local("HARRYP__"), local("HARRYP__"),
-      url("../HARRYP__.ttf");
-  }
+        url("../HARRYP__.ttf");
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
@@ -13,14 +13,14 @@
     --text-color: #cecbcb;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -40,14 +40,14 @@ ul {
 }
 
 h1 {
-    font-family: "HARRYP__",Arial, Helvetica, sans-serif;
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 60px;
     letter-spacing: 3px;
 }
 
 h3 {
-    font-size: 58px;  
+    font-size: 58px;
     font-family: "HARRYP__", Arial, Helvetica, sans-serif;
     text-align: center;
     letter-spacing: 2px;
@@ -58,6 +58,19 @@ h3 {
 
 section {
     padding: 30px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 HEADER                                     */
+/* -------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -121,7 +134,7 @@ section {
 
 
 
-#contact form input, 
+#contact form input,
 #contact form textarea {
     width: 100%;
     padding: 15px 10px;
@@ -163,4 +176,3 @@ footer {
     border-top: 1px solid var(--text-color);
     text-align: center;
 }
-
