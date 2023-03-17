@@ -2,7 +2,7 @@
 @font-face {
     font-family: "HARRYP__";
     src: local("HARRYP__"), local("HARRYP__"),
-      url("../HARRYP__.ttf");
+      url("../fonts/HARRYP__.TTF");
   }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
@@ -69,13 +69,30 @@ section {
     margin: 0 auto;
 }
 
+
+/* -------------------------------------------------------------------------- */
+/*                                  WORK EXPERIENCE                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
 #education {
     background-color: rgb(244, 242, 242);
     /* background-color: #EBDDC6; */
-    /* background: url("../pictures/bg-parchemin.jpeg") no-repeat center/cover; */
+    /* background: url("../assets/images/bg-parchemin.jpeg") no-repeat center/cover; */
     color: #151414;
     padding: 30px 0;
     text-align: center;
@@ -112,7 +129,7 @@ section {
     text-align: center;
     padding: 30px 0;
     background-color: var(--background-color2);
-    background: url("../pictures/nagini.jpeg") no-repeat center/cover;
+    background: url("../assets/images/nagini.jpeg") no-repeat center/cover;
 }
 
 #contact h3 {
