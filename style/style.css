@@ -69,17 +69,35 @@ section {
     margin: 0 auto;
 }
 
+
+
+
+
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
 #education {
-    background-color: rgb(244, 242, 242);
-    /* background-color: #EBDDC6; */
     /* background: url("../pictures/bg-parchemin.jpeg") no-repeat center/cover; */
+    /* background-color: #EBDDC6; */
+    /* background-color: rgb(244, 242, 242); */
     color: #151414;
     padding: 30px 0;
     text-align: center;
 }
+
+#education h3 {
+    margin: 0;
+}
+
+#education .container {
+    background-color:  rgba(255, 255, 255, .8);
+    padding: 20px 0;
+    border-radius: 15px;
+}
+
 
 #education h4.diploma_title {
     font-family: "HARRYP__", Arial, Helvetica, sans-serif;
