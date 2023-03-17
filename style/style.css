@@ -61,6 +61,127 @@ section {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                  ABOUT                                     */
+/* -------------------------------------------------------------------------- */
+
+.container_about{   
+    /* position: absolute; */
+    max-width: 315px;
+    margin: 0 auto;
+
+    height: 418px;
+    left: 19px;
+    top: 349px;
+
+    background: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: 0px 8px 100px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container_about h2{
+    background-color: yellow;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    padding: .5em;
+}
+
+
+.personalInfo{   /***AQUIIIIIIIIIIIIIi*****/
+    display: flex;
+    flex-direction: column;
+}
+
+.container_about .phone{
+    background-color: blue;
+}
+
+.container_about .age{
+    background-color: goldenrod;
+}
+
+.container_about .mail{
+    background-color: green;
+}
+
+.container_about .adresse{
+    background-color: greenyellow;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  DESCRIPTION                               */
+/* -------------------------------------------------------------------------- */
+
+.description {
+    /* background-color: yellow; */
+    width: auto;
+    padding: 1em;
+
+    display: flexbox;
+    flex-direction: row;
+}
+
+.description h3{
+    /* background-color: red; */
+    font-family: "HARRYP__";
+    /* font-size: 1.3em; */
+    margin-bottom: 0.4em;
+}
+   
+.description q{
+    /* background-color: green; */
+    margin-top: 2em;
+    width: auto;
+}
+
+.description p{
+    padding: 0.5em 0;
+    width: auto;
+    text-align: right;
+    font-size: .85em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  SOCIALS                                   */
+/* -------------------------------------------------------------------------- */
+
+.socials{
+    /* background-color: pink; */
+    padding: 0.4em;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.socials ul{
+    list-style: none;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials li{
+    padding: 0 0.6em;
+}
+
+.socials a:link, .socials a:visited, .socials a:active{
+    color: black;
+    text-decoration-line: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
 /*                                 UTILTY CLASSES                             */
 /* -------------------------------------------------------------------------- */
 .container {
