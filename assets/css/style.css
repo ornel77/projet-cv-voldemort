@@ -267,6 +267,57 @@ header .menu-items li {
     border-top: 1px solid var(--text-color);
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   SKILLS                                   */
+/* -------------------------------------------------------------------------- */
+
+#skills-container {
+    background: url(../images/skills.jpg) no-repeat center/cover;
+    height: 500px;
+    border-radius: 10px;
+    color: #151414;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-container #skills-titles {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#skills-container #skills-content {
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#skills-container #skills-content .hardSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 5px;
+    border-radius: 5px;
+    flex: 1 1 150px;
+}
+
+#skills-container #skills-content .softSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+    border-radius: 5px;
+    flex: 1 1 150px;
+}
+
+#skills-container p {
+    text-align: center;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
@@ -275,7 +326,7 @@ header .menu-items li {
     text-align: center;
     padding: 30px 0;
     background-color: var(--background-color2);
-    background: url("../assets/images/nagini.jpeg") no-repeat center/cover;
+    background: url("../images/nagini.jpeg") no-repeat center/cover;
 }
 
 #contact h3 {
