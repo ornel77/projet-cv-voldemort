@@ -1,0 +1,69 @@
+/* -------------------------------------------------------------------------- */
+/*                                  ABOUT                                     */
+/* -------------------------------------------------------------------------- */
+#aboutMe {
+    width: 1150px;
+    height: 430px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+#aboutMe img{
+    width: 168px;
+    height: 168px;
+    top: 20%;
+    left : 10%;
+}
+
+#aboutMe .container_about{ 
+    display: flex;
+    flex-direction: column;
+}
+
+
+#aboutMe .container_about h2{
+    padding: 0.6em 0;
+    font-size: 30px;
+}
+
+#aboutMe .container_about .phone, #aboutMe .container_about .mail, #aboutMe .container_about .age, #aboutMe .container_about .adresse{
+    font-size: 16px;
+    line-height: 19px;
+
+    width: auto;
+    padding-left: 1.8em;
+}
+
+#aboutMe .container_about .phone span, #aboutMe .container_about .mail span, #aboutMe .container_about .adresse span, #aboutMe .container_about .age span{
+    padding-left: .9em;
+    font-size: 16px;
+}
+    
+#aboutMe .container_about .phone i, #aboutMe .container_about .mail i, #aboutMe .container_about .adresse i, #aboutMe .container_about .age i{
+    font-size: 1.4em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  DESCRIPTION                               */
+/* -------------------------------------------------------------------------- */
+
+#aboutMe .description{
+    padding: 0 3em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#aboutMe .description .desktop{
+    display: initial;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  SOCIALS                                   */
+/* -------------------------------------------------------------------------- */
+
+/* RAS*/
