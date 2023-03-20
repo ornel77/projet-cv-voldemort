@@ -2,8 +2,8 @@
 @font-face {
     font-family: "HARRYP__";
     src: local("HARRYP__"), local("HARRYP__"),
-      url("../fonts/HARRYP__.TTF");
-  }
+        url("../fonts/HARRYP__.TTF");
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -15,14 +15,14 @@
     --text-color: #cecbcb;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -42,20 +42,20 @@ ul {
 }
 
 h1 {
-    font-family: "HARRYP__",Arial, Helvetica, sans-serif;
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     letter-spacing: 3px;
 }
 
 h3 {
-    font-size: 58px;  
+    font-size: 58px;
     font-family: "HARRYP__", Arial, Helvetica, sans-serif;
     text-align: center;
     letter-spacing: 2px;
     /* color: rgb(9, 0, 23); */
     color: #000022;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 section {
@@ -187,44 +187,230 @@ section {
     text-decoration-line: none;
 }
 
+/*                                 HEADER                                     */
+/* -------------------------------------------------------------------------- */
 
+
+
+.header-container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* hauteur du conteneur*/
+}
+
+header .menu-items {
+    display: flex;
+}
+
+header .nav-container li {
+    list-style: none;
+}
+
+header .nav-container a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.7rem;
+}
+
+header .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    /* Couleur Hamburger*/
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+header .menu-items {
+    padding-top: 120px;
+    /* Hauteur du menu */
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    /* fond menu */
+    height: 50vh;
+    /*proportion hauteur menu rapport screen*/
+    transform: translate(0%, -120%);
+    display: flex;
+    flex-direction: column;
+    margin-right: -40px;
+    padding-right: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+header .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    /*position Voldemort*/
+    left: 10px;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+/* .nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+} */
 /* -------------------------------------------------------------------------- */
 /*                                 UTILTY CLASSES                             */
 /* -------------------------------------------------------------------------- */
 .container {
-    max-width: 315px;
+    /* max-width: 315px; */
     /* width: 100%; */
-    margin: 0 auto;
+    margin: 0 28px;
 }
 
 
 /* -------------------------------------------------------------------------- */
-/*                                  WORK EXPERIENCE                                 */
+/*                                  WORK EXPERIENCE                           */
 /* -------------------------------------------------------------------------- */
 
+#workEx {
+    /* text-align: center; */
+    color: black ; 
+}
 
+#workEx .container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    margin: auto;
+    /* justify-content:space-between; */
+}
 
+#workEx .container .experience {
+    min-width:calc(100% - 15px);
+    background-color:rgba(250, 250, 250, .8);
+    padding: 15px;
+    border-radius: 15px;
+    margin :20px 10px ;
+    text-align: center;
 
+}
+    
+#workEx .container .experience h4 {
+    /* font-size:bold; */
+    padding:5px 0;
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
+}
 
+   
+#workEx .container .experience .imgVol {
+    display: block;
+    border-radius: 15px;
+    max-width: 70%;
+    /* max-height: 300px; */
+    height: 280px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto
+}
 
+#workEx .container .experience .iconeVol {
+    /* border-radius: 15px; */
+    max-width: 20%;
+    margin: 15px auto 0 auto;
 
-
-
-
-
-
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
 #education {
-    background-color: rgb(244, 242, 242);
+    /* background-color: rgb(244, 242, 242); */
     /* background-color: #EBDDC6; */
-    /* background: url("../assets/images/bg-parchemin.jpeg") no-repeat center/cover; */
     color: #151414;
     padding: 30px 0;
     text-align: center;
 }
+
+
+#education .container {
+    background-color:  rgba(255, 255, 255, .8);
+    padding: 20px 0;
+    border-radius: 15px;
+}
+
 
 #education h4.diploma_title {
     font-family: "HARRYP__", Arial, Helvetica, sans-serif;
@@ -236,8 +422,6 @@ section {
 
 #education .exam {
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
 }
 
 #education .grade li {
@@ -249,6 +433,100 @@ section {
     border-top: 1px solid var(--text-color);
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   SKILLS                                   */
+/* -------------------------------------------------------------------------- */
+
+#skills-container {
+    background: url(../images/skills.jpg) no-repeat center/cover;
+    height: 500px;
+    border-radius: 10px;
+    color: #151414;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-container #skills-titles {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#skills-container #skills-content {
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#skills-container #skills-content .hardSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 5px;
+    border-radius: 5px;
+    flex: 1 1 150px;
+}
+
+#skills-container #skills-content .softSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+    border-radius: 5px;
+    flex: 1 1 150px;
+}
+
+#skills-container p {
+    text-align: center;
+/* -------------------------------------------------------------------------- */    
+/*                                  HOBBIES                                   */
+/* -------------------------------------------------------------------------- */
+
+#hobbies {
+    /* margin: auto; */
+    color: #151414;
+}
+
+#hobbies .container  {
+    background-color:rgba(250, 250, 250, .8);
+    padding: 15px;
+    border-radius: 15px;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    /* align-content: space-around; */
+    max-width: none;
+    /* width: none; */
+            
+}
+
+#hobbies .container .imgFanny{
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+#hobbies .container .imgFanny .imgHobbie {
+    /* border-radius: 15px; */
+    padding: 5px ;
+    /* padding-left: 10px ; */
+    border-radius: 15px;
+    width: 140px;
+    height: 200px; 
+    margin: auto; 
+}
+
+#hobbies .container .imgFanny {
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #001242;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
@@ -257,22 +535,23 @@ section {
     text-align: center;
     padding: 30px 0;
     background-color: var(--background-color2);
-    background: url("../assets/images/nagini.jpeg") no-repeat center/cover;
+    background: url("../images/nagini.jpeg") no-repeat center/cover;
 }
 
 #contact h3 {
     color: var(--text-color);
+    margin-bottom: 25px;
 }
 
 
 
-#contact form input, 
+#contact form input,
 #contact form textarea {
     width: 100%;
     padding: 15px 10px;
     border-radius: 10px;
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     outline: none;
 }
 
@@ -308,4 +587,3 @@ footer {
     border-top: 1px solid var(--text-color);
     text-align: center;
 }
-

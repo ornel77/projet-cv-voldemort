@@ -67,3 +67,30 @@
 /* -------------------------------------------------------------------------- */
 
 /* RAS*/
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#education .poudlard {
+    width: 40%;
+}
+
+
+
+#education h4.diploma_title {
+    font-size: 40px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+#contact {
+    background-color: var(--background-color2);
+    /* max-width: 55%; */
+    margin: 0 auto;
+}
+
