@@ -1,0 +1,29 @@
+.container {
+    margin: 0 30px;
+    padding: 20px;
+}
+
+#education .poudlard {
+    width: 50%;
+}
+
+#education .diplomas {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+#contact  form {
+    max-width: 55%;
+    margin: 0 auto;
+}
+
+#contact .name_info {
+    display: flex;
+}
+
+#contact .name_info input:first-child {
+    margin-right: 20px;
+}
