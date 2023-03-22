@@ -3,7 +3,8 @@
 /* -------------------------------------------------------------------------- */
 #aboutMe {
     width: 1150px;
-    height: 430px;
+    height: 450px;
+    padding-top: 4em;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,16 +12,17 @@
     align-items: center;
 }
 
-#aboutMe img{
+#aboutMe .picProfile {
+    top: -80px;
+    left: 10%;
     width: 168px;
     height: 168px;
-    top: 20%;
-    left : 10%;
 }
 
 #aboutMe .container_about{ 
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 
@@ -30,11 +32,11 @@
 }
 
 #aboutMe .container_about .phone, #aboutMe .container_about .mail, #aboutMe .container_about .age, #aboutMe .container_about .adresse{
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
 
     width: auto;
-    padding-left: 1.8em;
+    padding-left: 2.2em;
 }
 
 #aboutMe .container_about .phone span, #aboutMe .container_about .mail span, #aboutMe .container_about .adresse span, #aboutMe .container_about .age span{

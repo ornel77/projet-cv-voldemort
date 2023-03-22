@@ -67,6 +67,8 @@ section {
 /* -------------------------------------------------------------------------- */
 
 #aboutMe{ /*Rectangle*/
+    position: relative;
+
     width: 338px;
     height: 480px;
     margin: auto;
@@ -77,12 +79,13 @@ section {
     box-shadow: 0px 8px 100px -8px rgba(0, 0, 0, 0.1);
     border-radius: 15px; 
     color: #000000;
+
 }
 
-#aboutMe img{
+#aboutMe .picProfile {
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: -80px;
+    left: 25%;
     width: 161px;
     height: 161px;
 
