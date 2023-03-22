@@ -1,5 +1,5 @@
 .container {
-    max-width: 1000px;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -9,20 +9,21 @@
 /*                                  ABOUT                                     */
 /* -------------------------------------------------------------------------- */
 #aboutMe {
-    width: 1150px;
+    width: 90vw;
     height: 430px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
 
-#aboutMe img{
+#aboutMe .picProfile {
     width: 168px;
     height: 168px;
-    top: 20%;
-    left : 10%;
+    /* top: -20.2%;
+    left : 6%; */
+    top: -80px;
+    left : 9%;
 }
 
 #aboutMe .container_about{ 
@@ -69,14 +70,23 @@
 }
 
 
-
+/* -------------------------------------------------------------------------- */
+/*                                   SOCIALS                                  */
+/* -------------------------------------------------------------------------- */
+.socials {
+    grid-column: 1 / 4;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
 
+#education .container{
+    padding: initial;
+}
+
 #education .poudlard {
-    width: 50%;
+    width: 40%;
 }
 
 #education .diplomas {
@@ -88,7 +98,7 @@
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
 #contact  form {
-    max-width: 55%;
+    max-width: 40%;
     margin: 0 auto;
 }
 
@@ -98,4 +108,11 @@
 
 #contact .name_info input:first-child {
     margin-right: 20px;
+}
+#contact form button {
+    width: 50%;
+}
+
+#contact .back_to_top {
+    font-size: 2.5rem;
 }
