@@ -1,9 +1,66 @@
+
 .container {
     max-width: 90vw;
     margin: 0 auto;
 }
 
 
+
+/*--------------------------------------------------------------------------- */
+/*                                 HEADER                                     */
+/* -------------------------------------------------------------------------- */
+
+.header {
+    margin-bottom: 324px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  HEADER                                    */
+/* -------------------------------------------------------------------------- */
+
+#home {
+    background-image: url('../images/back_hog.jpg');
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .checkbox {
+    display: none;
+}
+
+.nav-container .hamburger-lines {
+    display: none;
+}
+
+header .menu-items {
+    padding-top: 15px;
+    /* Hauteur du menu */
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0);
+    /* fond menu */
+    height: 60px;
+    /* proportion hauteur menu rapport screen */
+    padding-left: 20vw;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-right: -40px;
+    padding-right: 50px; */
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 8;
+    background-color: rgba(250, 250, 250, 0);
+    font-size: 2px;
+
+}
+
+header .menu-items li a {
+    font-size: 15px;
+    color: white;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                  ABOUT                                     */
@@ -15,40 +72,53 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+
+    padding: 2em 0 0 0;
 }
 
 #aboutMe .picProfile {
+    top: -100px;
+    left: 9%;
     width: 168px;
     height: 168px;
-    top: -80px;
-    left : 9%;
 }
 
-#aboutMe .container_about{ 
+#aboutMe .container_about {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    padding: 1.9em 0 0 0.5em;
 }
 
 
-#aboutMe .container_about h2{
+#aboutMe .container_about h2 {
     padding: 0.6em 0;
     font-size: 30px;
 }
 
-#aboutMe .container_about .phone, #aboutMe .container_about .mail, #aboutMe .container_about .age, #aboutMe .container_about .adresse{
+#aboutMe .container_about .phone,
+#aboutMe .container_about .mail,
+#aboutMe .container_about .age,
+#aboutMe .container_about .adresse {
     font-size: 16px;
     line-height: 19px;
 
     width: auto;
-    padding-left: 1.8em;
+    padding-left: 1.2em;
 }
 
-#aboutMe .container_about .phone span, #aboutMe .container_about .mail span, #aboutMe .container_about .adresse span, #aboutMe .container_about .age span{
+#aboutMe .container_about .phone span,
+#aboutMe .container_about .mail span,
+#aboutMe .container_about .adresse span,
+#aboutMe .container_about .age span {
     padding-left: .9em;
     font-size: 16px;
 }
-    
-#aboutMe .container_about .phone i, #aboutMe .container_about .mail i, #aboutMe .container_about .adresse i, #aboutMe .container_about .age i{
+
+#aboutMe .container_about .phone i,
+#aboutMe .container_about .mail i,
+#aboutMe .container_about .adresse i,
+#aboutMe .container_about .age i {
     font-size: 1.4em;
 }
 
@@ -58,9 +128,18 @@
 /* -------------------------------------------------------------------------- */
 
 #aboutMe .description{
-    padding: 0 3em;
+    padding: 0 3em 2em 3em;
+
     grid-column-start: 2;
     grid-column-end: 4;
+}
+
+#aboutMe .description h3 {
+    margin-bottom: 0.3em;
+}
+
+#aboutMe h3{
+    font-size: 60px;
 }
 
 #aboutMe .description .desktop{
@@ -91,6 +170,25 @@
     display: flex;
     justify-content: space-around;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SKILLS                                   */
+/* -------------------------------------------------------------------------- */
+/* #skills-container {*/
+    /* background: url(../images/skills.jpg) no-repeat center/cover; */
+    /* opacity: 0.8;
+    height: 500px;
+    border-radius: 15px;
+    color: #151414;
+    display: flex;
+    flex-direction: column; */
+/*} */
+
+#skills-container #skills-titles h4 {
+    font-size: 48px;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
