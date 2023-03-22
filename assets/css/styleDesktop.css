@@ -1,3 +1,10 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                  ABOUT                                     */
 /* -------------------------------------------------------------------------- */
@@ -64,35 +71,33 @@
 }
 
 
+
+
 /* -------------------------------------------------------------------------- */
-/*                                  SOCIALS                                   */
+/*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
-
-/* RAS*/
-
-
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
 #education .poudlard {
-    width: 40%;
+    width: 50%;
 }
 
-
-
-#education h4.diploma_title {
-    font-size: 40px;
+#education .diplomas {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
-#contact {
-    background-color: var(--background-color2);
-    /* max-width: 55%; */
+#contact  form {
+    max-width: 55%;
     margin: 0 auto;
 }
 
+#contact .name_info {
+    display: flex;
+}
+
+#contact .name_info input:first-child {
+    margin-right: 20px;
+}
