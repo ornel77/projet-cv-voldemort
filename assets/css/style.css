@@ -76,7 +76,7 @@ section {
 #home {
     background-image: url('../images/background_mobile.jpg');
     background-size: cover;
-    height: 90vh;
+    height: 800px;
 }
 
 .header-container {
@@ -192,6 +192,7 @@ header .menu-items {
     position: relative;
     z-index: 8;
     background-color: rgba(250, 250, 250, .94);
+    border-radius: 0 0 15px 15px;
 
 }
 
@@ -618,7 +619,7 @@ header .menu-items li {
     background-color: var(--background-color2);
 }
 
-#contact .back_to_top{
+#contact .back_to_top {
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
