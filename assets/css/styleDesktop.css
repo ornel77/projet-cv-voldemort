@@ -69,6 +69,31 @@
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                                  WORK EXPERIENCE                           */
+/* -------------------------------------------------------------------------- */
+
+
+#workEx .container {
+      overflow-y: initial;
+}
+
+#workEx .container .experience {
+    min-width:initial;
+   
+}
+
+#workEx .container .experience .imgVol {
+    display: block;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    margin-top: initial;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit:cover;
+}
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -85,8 +110,24 @@
 }
 
 /* -------------------------------------------------------------------------- */
+/*                                  HOBBIES                                   */
+/* -------------------------------------------------------------------------- */
+
+#hobbies .container .imgFanny {
+     margin: 20px 5px; 
+}
+
+#hobbies .container .imgFanny .imgHobbie {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
+
 #contact  form {
     max-width: 55%;
     margin: 0 auto;
