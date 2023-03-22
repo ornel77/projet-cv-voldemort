@@ -1,3 +1,10 @@
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                  HEADER                                    */
 /* -------------------------------------------------------------------------- */
@@ -49,20 +56,19 @@ header .menu-items li a {
 /*                                  ABOUT                                     */
 /* -------------------------------------------------------------------------- */
 #aboutMe {
-    width: 1150px;
+    width: 90vw;
     height: 430px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
 
-#aboutMe img {
+#aboutMe .picProfile {
     width: 168px;
     height: 168px;
-    top: 20%;
-    left: 10%;
+    top: -80px;
+    left : 9%;
 }
 
 #aboutMe .container_about {
@@ -119,33 +125,48 @@ header .menu-items li a {
 
 
 /* -------------------------------------------------------------------------- */
-/*                                  SOCIALS                                   */
+/*                                   SOCIALS                                  */
+/* -------------------------------------------------------------------------- */
+.socials {
+    grid-column: 1 / 4;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  EDUCATION                                 */
 /* -------------------------------------------------------------------------- */
 
-/* RAS*/
-
-
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+#education .container{
+    padding: initial;
 }
 
 #education .poudlard {
     width: 40%;
 }
 
-
-
-#education h4.diploma_title {
-    font-size: 40px;
+#education .diplomas {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
-#contact {
-    background-color: var(--background-color2);
-    /* max-width: 55%; */
+#contact  form {
+    max-width: 40%;
     margin: 0 auto;
+}
+
+#contact .name_info {
+    display: flex;
+}
+
+#contact .name_info input:first-child {
+    margin-right: 20px;
+}
+#contact form button {
+    width: 50%;
+}
+
+#contact .back_to_top {
+    font-size: 2.5rem;
 }
