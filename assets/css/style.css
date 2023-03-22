@@ -64,9 +64,9 @@ section {
 /*                                 UTILTY CLASSES                             */
 /* -------------------------------------------------------------------------- */
 .container {
-    /* max-width: 315px; */
+    max-width: 350px;
     /* width: 100%; */
-    margin: 0 28px;
+    margin: 0 auto;
 }
 
 
@@ -180,9 +180,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
-    /* align-content: space-around; */
-    max-width: none;
-    /* width: none; */
             
 }
 
@@ -258,12 +255,19 @@ section {
     background-color: var(--background-color2);
 }
 
+#contact .back_to_top{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 
 footer {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: var(--background-color2);
     border-top: 1px solid var(--text-color);
     text-align: center;
