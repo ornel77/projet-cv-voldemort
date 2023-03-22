@@ -74,7 +74,7 @@ section {
 /* -------------------------------------------------------------------------- */
 
 #home {
-    background-image: url('/assets/images/background_mobile.jpg');
+    background-image: url('../images/background_mobile.jpg');
     background-size: cover;
     height: 90vh;
 }
@@ -370,9 +370,6 @@ header .menu-items li {
 }
 
 
-/* -------------------------------------------------------------------------- */
-/*                                 UTILTY CLASSES                             */
-/* -------------------------------------------------------------------------- */
 
 
 /* -------------------------------------------------------------------------- */
@@ -621,12 +618,19 @@ header .menu-items li {
     background-color: var(--background-color2);
 }
 
+#contact .back_to_top{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 
 footer {
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: var(--background-color2);
     border-top: 1px solid var(--text-color);
     text-align: center;
