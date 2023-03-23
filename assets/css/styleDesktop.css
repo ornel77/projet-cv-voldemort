@@ -175,19 +175,46 @@ header .menu-items li a {
 /* -------------------------------------------------------------------------- */
 /*                                   SKILLS                                   */
 /* -------------------------------------------------------------------------- */
-/* #skills-container {*/
-    /* background: url(../images/skills.jpg) no-repeat center/cover; */
-    /* opacity: 0.8;
-    height: 500px;
-    border-radius: 15px;
-    color: #151414;
-    display: flex;
-    flex-direction: column; */
-/*} */
+#skills-container {
+    background-size: contain; 
+    background-color: white;
+    /* width: 80%;   Reduire largeur que de skills
+    margin: auto; */
+} 
 
 #skills-container #skills-titles h4 {
     font-size: 48px;
 }
+
+
+
+
+
+
+#skills-container #skills-content {
+    color: black;
+    padding: 0 0 2em 0;
+}
+
+#skills-container #skills-content .hardSkills{
+    margin: 0 3em;
+    /* margin-right: 4em; */
+    color: black;
+    background-color: rgb(255, 255, 255, 0.6); 
+    box-shadow: 0.5px 0.5px 4px #8080806b;
+}
+
+#skills-container #skills-content .softSkills{
+    margin: 0 3em;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.6); 
+    box-shadow: 0.5px 0.5px 4px #8080806b;
+}
+
+
+
+
+
 
 
 /* -------------------------------------------------------------------------- */
