@@ -154,22 +154,29 @@ header .menu-items li a {
 
 #workEx .container {
       overflow-y: initial;
+      justify-content: center;
+      /* max-width: 90vw; */
+      margin: auto; 
+      /* align-items: center; */
+    
 }
 
 #workEx .container .experience {
     min-width:initial;
+    margin: 20px 10px;
    
 }
 
 #workEx .container .experience .imgVol {
     display: block;
     border-radius: 15px;
-    width: 200px;
-    height: 300px;
+    width: 185px;
+    height: 280px;
     margin-top: initial;
     margin-left: auto;
     margin-right: auto;
     object-fit:cover;
+    
 }
 
 /* -------------------------------------------------------------------------- */
@@ -242,13 +249,14 @@ header .menu-items li a {
 /* -------------------------------------------------------------------------- */
 
 #hobbies .container .imgFanny {
-     margin: 20px 5px; 
+     margin: 20px 0px 0px 0px; 
 }
 
 #hobbies .container .imgFanny .imgHobbie {
-    width: 280px;
-    height: 400px;
+    width: 230px;
+    height: 330px;
     object-fit: cover;
+  
 }
 
 
