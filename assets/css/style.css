@@ -552,6 +552,7 @@ header .menu-items li {
     /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: space-around;
     /* align-content: space-around; */
     /* max-width: none; */

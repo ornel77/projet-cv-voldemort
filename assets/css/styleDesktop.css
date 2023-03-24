@@ -248,6 +248,11 @@ header .menu-items li a {
 /*                                  HOBBIES                                   */
 /* -------------------------------------------------------------------------- */
 
+#hobbies .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 #hobbies .container .imgFanny {
      margin: 20px 0px 0px 0px; 
 }
