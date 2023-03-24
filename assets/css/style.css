@@ -156,7 +156,7 @@ header .nav-container a:hover {
     width: 100%;
     border-radius: 10px;
     background-color: white;
-    
+
 
     /* Couleur Hamburger*/
 }
@@ -189,10 +189,11 @@ header .menu-items {
     padding-right: 50px; */
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    position:relative;
+    position: relative;
     z-index: 8;
     background-color: rgba(250, 250, 250, .94);
-    
+    border-radius: 0 0 15px 15px;
+
 }
 
 header .menu-items li {
@@ -506,8 +507,11 @@ header .menu-items li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*margin-right: 5px;*/
+    margin: 0 5px 5px 5px;
+    box-shadow: 0.5px 0.5px 4px #8080806b;
+  
     border-radius: 15px;
     flex: 1 1 150px;
 }
@@ -516,8 +520,12 @@ header .menu-items li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    /* margin-left: 5px; */
+    margin: 0 5px 5px 5px;
+    box-shadow: 0.5px 0.5px 4px #8080806b;
+    
     border-radius: 15px;
     flex: 1 1 150px;
 }
@@ -621,7 +629,7 @@ header .menu-items li {
     background-color: var(--background-color2);
 }
 
-#contact .back_to_top{
+#contact .back_to_top {
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
