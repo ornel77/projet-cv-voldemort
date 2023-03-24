@@ -595,6 +595,9 @@ header .menu-items li {
     margin-bottom: 25px;
 }
 
+#contact form {
+    margin-top: 20px;
+}
 
 
 #contact form input,
@@ -619,6 +622,7 @@ header .menu-items li {
     border: 1px solid var(--text-color);
     border-radius: 10px;
     margin-bottom: 15px;
+    margin-top: 20px;
     outline: none;
     cursor: pointer;
     padding: 10px;

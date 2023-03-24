@@ -1,6 +1,6 @@
 
 .container {
-    max-width: 90vw;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
@@ -255,10 +255,14 @@ header .menu-items li a {
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
+#contact {
+    padding-top: 60px;
+}
 
 #contact  form {
     max-width: 40%;
     margin: 0 auto;
+    margin-top: 60px;
 }
 
 #contact .name_info {
