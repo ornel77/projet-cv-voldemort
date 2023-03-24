@@ -420,8 +420,10 @@ header .menu-items li {
 
 #workEx .container .experience .iconeVol {
     /* border-radius: 15px; */
-    max-width: 20%;
+    /* max-width: 20%; */
     margin: 15px auto 0 auto;
+    width: auto;
+    height: 50px;
 
 }
 
