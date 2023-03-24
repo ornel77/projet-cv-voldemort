@@ -234,23 +234,58 @@
         </div>
     </section>
 
+    <?php
+    $errors = [];
+    $formValidate = '';
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if(!isset($_POST['firstName']) || trim($_POST['firstName']) === '') {
+            $errors[] = "enter your first name, mud blood";
+        }
+        if(!isset($_POST['lastName']) || trim($_POST['lastName']) === '') {
+            $errors[] = "the last name is required, mud blood!";
+        }   
+        if(!isset($_POST['contactMail']) || trim($_POST['contactMail']) === '') {
+            $errors[] = "The email is required";
+        }   
+        if(!filter_var($_POST['contactMail'], FILTER_VALIDATE_EMAIL)) {
+            $errors[] = "please enter a valid email address";
+        }   
+        if(!isset($_POST['contactMessage']) || trim($_POST['contactMessage']) === '') {
+            $errors[] = "please enter a message";
+        }   
+        if(empty($errors)) {
+            $formValidate = "Your message has been sent";
+        }
+    }
+
+
+    ?>
+
     <section id="contact">
         <div class="container">
             <h3>Contact Me</h3>
-            <form action="">
+            <ul>
+                <?php
+                    foreach($errors as $error){
+                        echo("<li>" . $error . "</li>" );
+                    }
+
+                ?>
+            </ul>
+            <h4><?php echo($formValidate)?></h4>
+            <form action="#contact" method="POST">
                 <div class="name_info">
-                    <input type="text" id="first_name" placeholder="Enter your firstname">
-                    <input type="text" id="last_name" placeholder="Enter your lastname">
+                    <input type="text" id="first_name" name="firstName" placeholder="Enter your firstname" max="100" required>
+                    <input type="text" id="last_name" name="lastName" placeholder="Enter your lastname" max="100" required>
                 </div>
-                <input type="mail" placeholder="Enter your mail">
-                <textarea placeholder="Comment here"></textarea>
+                <input type="email" name="contactMail" placeholder="Enter your mail" max="255" required>
+                <textarea name="contactMessage" placeholder="Comment here" required></textarea>
                 <button type="submit">Submit</button>
             </form>
             <a href="#home" class="back_to_top"><i class="fa-solid fa-wand-sparkles fa-bounce"></i></a>
         </div>
     </section>
-
-
 
     <footer id="footer">
         <p>&copy; Copyright 2023</p>

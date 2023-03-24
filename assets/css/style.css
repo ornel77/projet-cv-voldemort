@@ -80,7 +80,7 @@ section {
 }
 
 .header-container {
-    max-width: 1050px;
+    max-width: 1150px;
     width: 90%;
     margin: auto;
 }
@@ -583,6 +583,17 @@ header .menu-items li {
 #contact h3 {
     color: var(--text-color);
     margin-bottom: 25px;
+}
+
+#contact h4 {
+    font-family: "HARRYP__", Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#contact ul li {
+    color: red;
 }
 
 
