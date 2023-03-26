@@ -370,6 +370,14 @@ header .menu-items li {
     text-decoration-line: none;
 }
 
+.socials a {
+    transition: all 250ms ease-in;
+}
+
+.socials a:hover {
+    opacity: .65;
+}
+
 
 
 
